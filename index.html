@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyWeather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="header">
+      <h1>CyWeather Forecast</h1>
+    </div>
+    <div class="main">
+      <label for="longitude">Enter longitude:</label><br>
+      <input type="number" class="longitude" name="longitude" min="0" max="180" step=".01"><br>
+      <label for="latitude">Enter latitude:</label><br>
+      <input type="number" class="latitude" name="latitude" min="0" max="90" step=".01"><br>
+      <input class="submit" type="submit" value="Submit">
+    </div>
+    <div class="display">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>06.00 </th>
+            <th>07:00 </th>
+            <th>08:00 </th>
+            <th>09:00 </th>
+            <th>10:00</th>
+            <th>11:00 </th>
+            <th>12:00 </th>
+            <th>13:00 </th>
+            <th>14:00 </th>
+            <th>15:00 </th>
+            <th>16:00 </th>
+            <th>17:00 </th>
+            <th>18:00 </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="cloud">
+            <td>cloudcover <span  class="cloud_cont"></span> </td>
+            
+          </tr>
+          <tr class="relHumidity" >
+            <td>relative humidity <span class="relHumidity_cont"></span></td>
+           
+          </tr>
+          <tr class="temp">
+            <td>Temp<span class="temp_cont"></span></td>
+         
+            
+          </tr>
+          <tr class="windSpeed">
+            <td>windspeed <span class="windSpeed_cont"></span></td>
+         
+          </tr>
+        </tbody>
+        </table>
+       
+       
+    
+       
+      
+
+    </div>
+
+  
+  <script src="main.js"></script>
+</body>
+</html>
